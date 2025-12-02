@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CSS3 Animations & JS Functions — Assignment</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CSS3 Animations & JavaScript Functions</h1>
+    <p class="subtitle">A small interactive demo showing transitions, keyframes, scope, parameters, and triggers.</p>
+  </header>
+
+  <main>
+    <!-- Part 1: Pure CSS transitions & animations -->
+    <section id="part1">
+      <h2>Part 1 — CSS Transitions & Keyframes</h2>
+      <p>Hover the buttons and observe the smooth transitions.</p>
+      <div class="controls">
+        <button class="btn primary">Hover Me</button>
+        <button class="btn ghost">Ghost Button</button>
+      </div>
+
+      <div class="demo-row">
+        <div class="box" id="animatedBox">I animate</div>
+        <div>
+          <button id="triggerBox" class="btn">Animate Box</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 2: JavaScript functions (scope, parameters, return values) -->
+    <section id="part2">
+      <h2>Part 2 — JavaScript Functions</h2>
+      <p>Open the console or use the controls to see functions with parameters and return values.</p>
+
+      <div class="function-demo">
+        <label for="numA">A:</label>
+        <input id="numA" type="number" value="3" />
+        <label for="numB">B:</label>
+        <input id="numB" type="number" value="4" />
+        <button id="sumBtn" class="btn">Calculate Sum</button>
+        <div id="sumResult" class="result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Part 3: Combining CSS animations with JavaScript -->
+    <section id="part3">
+      <h2>Part 3 — Triggering Animations with JavaScript</h2>
+      <div class="card-scene">
+        <div class="card" id="flipCard">
+          <div class="card-inner">
+            <div class="card-face card-front">Front</div>
+            <div class="card-face card-back">Back</div>
+          </div>
+        </div>
+        <button id="flipBtn" class="btn">Flip Card</button>
+      </div>
+
+      <div class="spinner-demo">
+        <div class="spinner" id="spinner" aria-hidden="true"></div>
+        <div>
+          <button id="toggleSpinner" class="btn">Start/Stop Spinner</button>
+        </div>
+      </div>
+
+      <div class="modal-demo">
+        <button id="openModal" class="btn">Open Modal</button>
+        <div class="modal" id="modal" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+            <h3>Modal</h3>
+            <p>This modal slides in via CSS. It's opened and closed with JavaScript.</p>
+            <button id="closeModal" class="btn ghost">Close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Files: <code>index.html</code>, <code>styles.css</code>, <code>script.js</code></p>
+  </footer>
+</body>
+</html>
